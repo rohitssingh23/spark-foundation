@@ -1,0 +1,20 @@
+.navbar-nav {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  background-color: rgb(34, 126, 180);
+}
+
+#nav-bar {
+  background-color: #E94B3CFF;
+  position: static;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-link {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}

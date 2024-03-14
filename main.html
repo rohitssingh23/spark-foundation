@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Banking System</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+  <style>
+    /* Custom Styles */
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f8f9fa;
+    }
+    #nav-bar {
+      background-color: #092843;
+    }
+    #nav-bar .navbar-brand img {
+      width: 60px;
+      height: auto;
+    }
+    #nav-bar .navbar-toggler-icon {
+      color: #fff;
+    }
+    #nav-bar .nav-link {
+      color: #fff !important;
+    }
+    .coloured-section {
+      background-color: #335c87;
+      color: #fff;
+      padding: 60px 0;
+    }
+    #main {
+      background-color: #29547f;
+    }
+    #features .download-button {
+      background-color: #343a40;
+      color: #fff;
+      border: 2px solid #343a40;
+    }
+    #footer {
+      background-color: #29547f;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .social-icon {
+      font-size: 24px;
+      margin: 0 10px;
+      color: #fff;
+    }
+    @media (max-width: 576px) {
+      #nav-bar .navbar-brand img {
+        width: 40px;
+      }
+    }
+  </style>
+</head>
+<body onload="loader()">
+
+  <!-- Loader -->
+  <div id="loading"></div>
+
+  <!-- Navigation Bar -->
+  <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="bank.jpg" alt="Bank Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="main.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="client.html">View Customers</a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="banking.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- Banner Section -->
+  <section id="main" class="coloured-section">
+    <div class="container text-center">
+      <h1>Sparks Foundation Bank</h1>
+      <p>Your Trust is Our Strength</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="container">
+    <div class="row text-center">
+      <div class="col-lg-4 mb-4" data-aos="fade-up">
+        <i class="fas fa-users fa-4x mb-3"></i>
+        <h3>View Customers</h3>
+        <p>List of customer who show faith on us.</p>
+      </div>
+      <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="150">
+        <i class="fas fa-exchange-alt fa-4x mb-3"></i>
+        <h3>Transaction History</h3>
+        <p>Check the history of all transactions made with our bank.</p>
+      </div>
+      <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+        <i class="fas fa-coins fa-4x mb-3"></i>
+        <h3>Transfer Money</h3>
+        <p>Transfer money 24/7.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>FIND US ON SOCIAL MEDIA</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-square social-icon"></i></a>
+            <a href="#"><i class="fab fa-instagram social-icon"></i></a>
+            <a href="#"><i class="fab fa-twitter social-icon"></i></a>
+            <a href="#"><i class="fab fa-linkedin social-icon"></i></a>
+          </div>
+          <p>&copy; 2024 The Sparks Foundation Bank. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 700,
+    });
+    var preloader = document.getElementById("loading");
+    function loader(){
+      preloader.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
